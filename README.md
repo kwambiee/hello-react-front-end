@@ -35,7 +35,6 @@ To install packages, in the terminal kindly run this command
 ```
 $ npm install
 ```
-```
 
 ### Back-End
 Link to back end repo - [React](https://github.com/kwambiee/hello-rails-back-end/pull/1)
