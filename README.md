@@ -38,7 +38,7 @@ $ npm install
 ```
 
 ### Back-End
-Link to back end repo - [React]()
+Link to back end repo - [React](https://github.com/kwambiee/hello-rails-back-end/pull/1)
 
 ### Setup
 
