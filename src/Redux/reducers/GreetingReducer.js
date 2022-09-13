@@ -12,7 +12,7 @@ export const fetchGreeting = () => async (dispatch) => {
     const greets = await Axios.get('http://localhost:3000/greetings');
     dispatch(addGreets(greets.data));
   } catch (error) {
-    console.log(error);
+    error(error);
   }
 };
 
