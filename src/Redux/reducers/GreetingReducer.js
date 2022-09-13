@@ -12,7 +12,7 @@ export const fetchGreeting = () => async (dispatch) => {
     const greets = await Axios.get('http://localhost:3000/greetings');
     dispatch(addGreets(greets.data));
   } catch (error) {
-    error.message = 'Error fetching greetings';
+    console.log(error);
   }
 };
 
@@ -21,7 +21,7 @@ const initialState = [];
 const greetingReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_GREETINGS:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     default:
       return state;
   }
