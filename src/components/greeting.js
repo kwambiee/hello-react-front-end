@@ -7,7 +7,7 @@ const Greeting = () => {
   return (
     <div>
       <div>
-        <h1>{greetings[0]}</h1>
+        <h1>{greetings.text}</h1>
       </div>
     </div>
 

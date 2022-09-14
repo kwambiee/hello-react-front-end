@@ -16,12 +16,12 @@ export const fetchGreeting = () => async (dispatch) => {
   }
 };
 
-const initialState = [];
+const initialState = {};
 
 const greetingReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_GREETINGS:
-      return [...state, action.payload];
+      return { ...state, ...action.payload };
     default:
       return state;
   }
